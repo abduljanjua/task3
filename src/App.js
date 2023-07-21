@@ -1,4 +1,4 @@
-import img from "./images/test-img.jpg";
+import img from "./images/vertical-img.jpg";
 import "./App.scss";
 import {
   Container,
