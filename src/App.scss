@@ -1,0 +1,73 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 801px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px
+);
+
+@import '~bootstrap/scss/bootstrap';
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin gradient-background {
+  background-image: linear-gradient(90deg, rgba(245, 246, 252, 0.15), rgba(117, 19, 93, 0.15)) !important;
+}
+
+body {
+  background-color: lightgray;
+  color: black;
+  font-weight: 400;
+}
+
+form {
+  padding: 20px;
+}
+
+label {
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.main-content {
+  margin-top: 10px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.box {
+  border: 1px solid black;
+  @include border-radius(10px);
+  background-color: #fff;
+  margin: 20px 10px;
+}
+
+.alert {
+  padding: 5px;
+  margin-left: 5px;
+  @include border-radius(30px);
+  border-color: #fff;
+  margin-bottom: 0;
+}
+
+.border-radius-30 {
+  @include border-radius(30px);
+}
+
+.padding-20 {
+  padding: 20px
+}
+
+.btn-gradiant {
+  @include gradient-background;
+}
+
+.img-icon {
+  max-width: 20px;
+  height: auto;
+}
